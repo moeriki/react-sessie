@@ -1,5 +1,8 @@
 {
   "root": true,
-  "extends": ["noise", "noise-browser"],
-  "overrides": [{ "files": "**.jsx", "extends": "noise-react" }]
+  "extends": ["noise", "noise-browser", "noise-ts"],
+  "overrides": [
+    { "files": "**.{ts,tsx}", "extends": "noise-ts" },
+    { "files": "**.{jsx,tsx}", "extends": "noise-react" }
+  ]
 }
